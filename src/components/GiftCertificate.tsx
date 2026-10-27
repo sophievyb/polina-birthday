@@ -1,0 +1,2 @@
+import {assets} from '../config';
+export function GiftCertificate(){return <div className="certificate"><p className="eyebrow">МАЛЕНЬКОЕ НАЧАЛО БОЛЬШОЙ МЕЧТЫ</p><h3>Подарочный<br/>сертификат</h3><p className="handwritten">Для Полины ♡</p><h4>Курс по выпечке хлеба</h4><p>Пусть в твоей жизни будет больше тепла, вдохновения и вкусных открытий!</p><a className="ink-button" href={assets.certificate} download="Сертификат-для-Полины.pdf">Скачать сертификат ↓</a></div>}

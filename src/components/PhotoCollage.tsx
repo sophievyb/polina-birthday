@@ -1,0 +1,2 @@
+import {assets} from '../config';
+export function PhotoCollage({childhood=false}:{childhood?:boolean}){return <div className={`photo-collage ${childhood?'childhood':''}`}>{(childhood?assets.childhood:[assets.portrait]).map((src,i)=><figure key={src}><img src={src} alt={childhood?`Детский снимок ${i+1}`:'Полина'}/><figcaption>{childhood?['когда деревья','были большими…','и всё впереди ♡'][i]:'самая настоящая ♡'}</figcaption></figure>)}</div>}
